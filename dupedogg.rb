@@ -8,6 +8,12 @@ class Dupedogg < Formula
   license "MIT"
 
   depends_on "python@3.12"
+  depends_on "jpeg-turbo"
+  depends_on "libpng"
+  depends_on "libtiff"
+  depends_on "little-cms2"
+  depends_on "openjpeg"
+  depends_on "webp"
 
   resource "Pillow" do
     url "https://files.pythonhosted.org/packages/f3/0d/d0d6dea55cd152ce3d6767bb38a8fc10e33796ba4ba210cbab9354b6d238/pillow-11.3.0.tar.gz"
