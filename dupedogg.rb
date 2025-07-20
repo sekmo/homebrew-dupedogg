@@ -4,7 +4,7 @@ class Dupedogg < Formula
   desc "A command-line tool to find and move similar images"
   homepage "https://github.com/sekmo/dupedogg"
   url "https://github.com/sekmo/dupedogg/archive/refs/tags/v0.1.1.tar.gz"
-  sha256 "f2914d58d4af355de80ca136d5b07f62884ba389f4b04c1729e8014328000479"
+  sha256 "6f68a0294914cfb05ce15b85a35b3c6b6037ec1842a375e8aeb8cbea7c0cbbb2"
   license "MIT"
 
   depends_on "python@3.12"
