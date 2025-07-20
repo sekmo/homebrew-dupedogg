@@ -2,14 +2,13 @@ class Dupedogg < Formula
   desc "A command-line tool to find and move similar images"
   homepage "https://github.com/sekmo/dupedogg"
   url "https://github.com/sekmo/dupedogg/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "c633cf5ce3f113009288fd3a0a5664d0cd6f7f3f82731fe63a95c01a78a5a7ac"
+  sha256 "30447fbd6472c1e1dae1c1e8281e735e8051a8fab9c3dc5c152c55df596f50f3"
   license "MIT"
 
   depends_on "python"
 
   def install
-    venv = virtualenv_create(libexec, "python3")
-    system libexec/"bin/pip", "install", "."
+    system "python3", *Language::Python.setup_install_args(libexec)
     bin.install_symlink libexec/"bin/dupedogg" => "dupedogg"
   end
 
