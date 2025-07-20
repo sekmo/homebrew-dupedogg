@@ -8,6 +8,7 @@ class Dupedogg < Formula
   depends_on "python"
 
   def install
+    system Formula["python"].opt_bin/"pip3", "install", "setuptools", "wheel"
     system "python3", *Language::Python.setup_install_args(libexec)
     bin.install_symlink libexec/"bin/dupedogg" => "dupedogg"
   end
